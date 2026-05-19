@@ -1,0 +1,57 @@
+.historico-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.historico-header {
+    margin-bottom: 30px;
+}
+
+.historico-header h2 {
+    color: #2e7d32;
+    font-size: 1.8rem;
+}
+
+.historico-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.historico-table th, .historico-table td {
+    padding: 18px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.historico-table th {
+    background-color: #f8f9fa;
+    color: #666;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.badge.aprovada { background: #e8f5e9; color: #2e7d32; }
+.badge.pendente { background: #fff8e1; color: #ffa000; }
+.badge.recusada { background: #ffebee; color: #c62828; }
+
+.empty-state {
+    text-align: center;
+    padding: 50px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    color: #999;
+}

@@ -1,0 +1,89 @@
+.cadastro-container {
+    background-color: #f4f7f6;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.cadastro-box {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.cadastro-box h2 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.cadastro-box h2 span { color: #2e7d32; }
+
+.cadastro-box p {
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.input-group input, .input-group select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus { border-color: #2e7d32; }
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.btn-registrar {
+    width: 100%;
+    padding: 14px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn-registrar:hover { background-color: #1b5e20; }
+
+.footer-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.footer-link a {
+    color: #2e7d32;
+    text-decoration: none;
+    font-weight: bold;
+}

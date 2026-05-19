@@ -1,0 +1,89 @@
+.home-container {
+    overflow-x: hidden;
+}
+
+/* HERO SECTION */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background: linear-gradient(135deg, #f1f8e9 0%, #ffffff 100%);
+    gap: 40px;
+}
+
+.hero-content { flex: 1; }
+.hero-content h1 { font-size: 3.5rem; color: #2e7d32; margin-bottom: 10px; }
+.hero-content h1 span { color: #fbc02d; }
+.hero-content h2 { font-size: 1.5rem; color: #558b2f; margin-bottom: 20px; font-weight: 500; }
+.hero-content p { font-size: 1.1rem; color: #666; line-height: 1.6; margin-bottom: 35px; max-width: 500px; }
+
+.hero-buttons { display: flex; gap: 15px; }
+.btn-hero-primary { background: #2e7d32; color: white; border: none; padding: 15px 30px; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+.btn-hero-secondary { background: white; color: #2e7d32; border: 2px solid #2e7d32; padding: 15px 30px; border-radius: 8px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+.btn-hero-primary:hover { background: #1b5e20; transform: translateY(-2px); }
+
+.hero-image img { width: 100%; max-width: 550px; border-radius: 20px; box-shadow: 20px 20px 60px #d9d9d9; }
+
+/* POR QUE EXISTIMOS */
+.purpose-section {
+    display: flex;
+    padding: 100px 10%;
+    background: #fff;
+    align-items: center;
+    gap: 60px;
+}
+
+.purpose-text { flex: 1; }
+.purpose-text h2 { color: #2e7d32; font-size: 2.2rem; margin-bottom: 20px; }
+.purpose-text p { color: #555; line-height: 1.8; font-size: 1.1rem; margin-bottom: 15px; }
+.purpose-text .highlight { font-weight: bold; color: #2e7d32; border-left: 4px solid #fbc02d; padding-left: 15px; }
+.purpose-image img { width: 100%; max-width: 450px; border-radius: 15px; }
+
+/* FEATURE CARDS */
+.features-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 10%;
+    background: #f9f9f9;
+}
+
+.feature-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    width: 45%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.feature-card:hover { transform: translateY(-10px); }
+.icon-box { font-size: 3rem; margin-bottom: 20px; }
+.feature-card h3 { color: #2e7d32; margin-bottom: 15px; }
+.feature-card p { color: #777; line-height: 1.6; }
+
+/* COMO FUNCIONA */
+.how-it-works { padding: 100px 10%; text-align: center; }
+.how-it-works h2 { color: #2e7d32; font-size: 2.5rem; margin-bottom: 60px; }
+.steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+.step-number { font-size: 3rem; font-weight: 900; color: #fbc02d; opacity: 0.3; display: block; margin-bottom: 10px; }
+.step-item h4 { color: #333; margin-bottom: 15px; font-size: 1.3rem; }
+.step-item p { color: #666; line-height: 1.6; }
+
+/* IMPACTO SOCIAL */
+.social-impact { padding: 80px 10%; background: #2e7d32; color: white; text-align: center; }
+.social-impact h2 { font-size: 2.5rem; margin-bottom: 50px; }
+.impact-cards { display: flex; justify-content: space-between; gap: 20px; }
+.impact-mini-card { background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 12px; flex: 1; backdrop-filter: blur(5px); }
+.impact-mini-card h4 { margin-bottom: 10px; color: #fbc02d; }
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .hero-section, .purpose-section, .features-section, .steps-grid, .impact-cards {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        padding: 40px 5%;
+    }
+    .feature-card { width: 100%; }
+}
